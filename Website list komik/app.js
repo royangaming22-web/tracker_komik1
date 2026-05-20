@@ -76,3 +76,21 @@ function hapusCatatan(nomorUrut) {
         tampilkanKeLayar();
     }
 }
+// Tambahkan fungsi ini di paling bawah file app.js kamu
+
+function ubahTema() {
+    // 1. Ambil elemen body
+    const body = document.body;
+    // 2. Ambil elemen tombol saklar
+    const tombol = document.getElementById('btn-tema');
+
+    // 3. FITUR UTAMA: .toggle() otomatis pasang/lepas kelas 'dark-mode'
+    body.classList.toggle('dark-mode');
+
+    // 4. Ganti tulisan tombolnya biar interaktif
+    if (body.classList.contains('dark-mode')) {
+        tombol.innerText = "☀️ Mode Terang";
+    } else {
+        tombol.innerText = "🌙 Mode Gelap";
+    }
+}
