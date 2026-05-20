@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker Bacaan Novel & Komik</title>
+    <!-- Menyambungkan HTML ini dengan file style.css nanti -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📚 Tracker Bacaanku</h1>
+        <p>Catat chapter terakhir komik atau novel yang kamu baca.</p>
+
+        <!-- AREA UTAMA 1: FORM INPUT (Tempat ngetik data) -->
+        <div class="form-box">
+            <h3>Tambah Catatan Baru</h3>
+            <form id="formBacaan">
+                
+                <!-- Input Judul -->
+                <div class="input-group">
+                    <label for="judul">Judul Novel / Komik:</label>
+                    <input type="text" id="judul" placeholder="Contoh: Solo Leveling" required>
+                </div>
+
+                <!-- Input Chapter -->
+                <div class="input-group">
+                    <label for="chapter">Chapter Terakhir:</label>
+                    <input type="number" id="chapter" placeholder="Contoh: 150" required>
+                </div>
+
+                <!-- Pilihan Status (Dropdown) -->
+                <div class="input-group">
+                    <label for="status">Jenis Bacaan:</label>
+                    <select id="status">
+                        <option value="Komik Manga">📖 Komik Manga </option>
+                        <option value="Komik manhwa">📖 Komik manhwa </option>
+                        <option value="Komik Manhua">📖 Komik Manhua </option>
+                        <option value="Novel">📝 Novel / Light Novel</option>
+                    </select>
+                </div>
+
+                <!-- Pilihan Status komik (Dropdown) -->
+                <div class="input-group">
+                    <label for="statuskomik">Status:</label>
+                    <select id="statuskomik">
+                        <option value="ongoing">📖 ongoing</option>
+                        <option value="end season">📝 end season</option>
+                        <option value="hiatus">📝 hiatus</option>
+                    </select>
+                </div>
+
+                <!-- Tombol Submit -->
+                <button type="submit" id="tombolSubmit">Simpan ke Library</button>
+            </form>
+        </div>
+
+        <!-- AREA UTAMA 2: OUTPUT / LIBRARY (Tempat munculin hasil) -->
+        <div class="library-box">
+            <h3>Library Catatan & Timeline</h3>
+            
+            <!-- Wadah kosong yang nanti akan diisi otomatis oleh JavaScript (app.js) -->
+            <div id="daftarBacaan" class="daftar-bacaan">
+                <p class="pesan-kosong">Belum ada catatan. Yuk input bacaan pertamamu!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menyambungkan HTML ini dengan file logika app.js -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+/* Mengatur font dasar dan warna background seluruh web */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Pembungkus utama agar konten berada di tengah halaman */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+p {
+    text-align: center;
+    color: #7f8c8d;
+}
+
+/* Menghias kotak Form Input dan kotak Library */
+.form-box, .library-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Merapikan jarak antar kolom input */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Biar input tidak luber keluar kotak */
+}
+
+/* Menghias tombol submit agar berwarna biru */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9; /* Efek menggelap saat tombol disentuh mouse */
+}
+
+/* Desain kartu catatan yang akan muncul otomatis lewat JavaScript */
+.card {
+    background: #ecf0f1;
+    padding: 15px;
+    border-left: 5px solid #3498db;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.card h4 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+}
+
+.card p {
+    text-align: left;
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.timeline {
+    color: #e67e22;
+    font-weight: bold;
+}
+/* Menghias tombol hapus di dalam kartu */
+.btn-hapus {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: auto; /* Biar ukurannya tidak selebar tombol submit */
+    padding: 5px 10px;
+    background-color: #e74c3c; /* Warna merah */
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.btn-hapus:hover {
+    background-color: #c0392b; /* Merah gelap saat disentuh mouse */
+}
