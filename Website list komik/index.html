@@ -57,13 +57,26 @@
             </form>
         </div>
 
+        <div class="menu-fitur">
+    <p>Total Koleksi Bacaan: <b id="total-judul">0</b> Judul</p>
+    
+    <input type="text" id="input-cari" onkeyup="cariKomik()" placeholder="🔍 Cari judul manhwa/novel...">
+    
+    <div class="backup-section">
+        <button onclick="downloadBackup()" class="btn-backup">📥 Backup Data (Download)</button>
+        <label for="upload-file" class="btn-restore">📤 Restore Data (Upload File)</label>
+        <input type="file" id="upload-file" onchange="uploadBackup(event)" style="display: none;">
+    </div>
+</div>
+
+<div id="daftarBacaan"></div>
+
         <!-- AREA UTAMA 2: OUTPUT / LIBRARY (Tempat munculin hasil) -->
         <div class="library-box">
-            <h3>Library Catatan & Timeline</h3>
             
             <!-- Wadah kosong yang nanti akan diisi otomatis oleh JavaScript (app.js) -->
             <div id="daftarBacaan" class="daftar-bacaan">
-                <p class="pesan-kosong">Belum ada catatan. Yuk input bacaan pertamamu!</p>
+                <p class="pesan-kosong"></p>
             </div>
         </div>
     </div>

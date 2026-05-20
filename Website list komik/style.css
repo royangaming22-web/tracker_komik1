@@ -135,3 +135,45 @@ body.dark-mode select {
 body.dark-mode .timeline {
     color: #aaaaaa;
 }
+/* Style Tambahan untuk Fitur Baru */
+.menu-fitur {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+}
+body.dark-mode .menu-fitur {
+    background-color: #252525;
+}
+#input-cari {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.backup-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.btn-backup, .btn-restore {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn-backup { background-color: #10b981; color: white; }
+.btn-restore { background-color: #f59e0b; color: white; display: inline-block; }
+
+/* Tambahkan juga aturan input cari untuk mode gelap */
+body.dark-mode #input-cari {
+    background-color: #2d2d2d;
+    color: white;
+    border: 1px solid #444444;
+}
